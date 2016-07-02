@@ -349,7 +349,7 @@ Also called fishing, researcher degrees of freedom, or data-mining.
 Definition: flexibility in data analysis allows portrayal of \textit{anything} as below an arbitrary p-value threshhold; significance loses its meaning.
 \item Discussed since at least \href{http://www.jstor.org/stable/1803924}{Leamer (1983)}.
 \item
-Not something only evil people do. It's subconcious, or simply built into statistics (Gelman, Loken 2013).
+Not something only evil people do. It's subconscious, or simply built into statistics (Gelman, Loken 2013).
 \end{itemize}
 \end{frame}
 
@@ -505,7 +505,11 @@ From 3ie: ``A pre-analysis plan is a detailed description of the analysis to be 
 \section{Replicability}
 \begin{frame}{Replication (or Lack Thereof)}
 \begin{enumerate}[<.->]
- \item The Problem	\href{http://www.jstor.org/stable/1806061}{(QRP, JMCB Project)}
+ \item The Problem	
+ 	\begin{itemize}
+ 	\item Questionable Research Practices
+ 	\item \href{http://www.jstor.org/stable/1806061}{Replication Projects: JMCB, Camerer}
+	\end{itemize}
  \item Project Protocol, Reporting Standards
  \item Organizing Workflow
  \item Code \& Data Sharing
@@ -535,12 +539,12 @@ From 3ie: ``A pre-analysis plan is a detailed description of the analysis to be 
 %\frame{\includegraphics[scale=0.375]{../Images/PrelecFig1.PNG}}
 %\end{frame}
 
-\begin{frame}{Ethical Research}
+\begin{frame}{Questionable Research Practices}
 Why we worry (a little):
 \begin{itemize}[<.->]
 \item \href{http://onlinelibrary.wiley.com/doi/10.1111/j.1465-7295.2001.tb00058.x/abstract}{List (2001)}, Economists at AEA meetings
-\item \href{http://www.jstor.org/stable/pdf/10.1525/jer.2007.2.4.3.pdf}{(Anderson, Martinson, De Vries 2007)}
-\item \href{http://pss.sagepub.com/content/23/5/524}{(John, Loewenstein, Prelec 2011)}
+\item \href{http://www.jstor.org/stable/pdf/10.1525/jer.2007.2.4.3.pdf}{Anderson, Martinson, De Vries (2007)}
+\item \href{http://pss.sagepub.com/content/23/5/524}{John, Loewenstein, Prelec (2011)}
 \end{itemize}
 \end{frame}
 
@@ -574,7 +578,27 @@ Why we worry (a little):
             };
         \end{tikzpicture}
      \end{frame}
+\begin{frame}[plain, label=AEAreg]
+         \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+                \href{http://science.sciencemag.org/content/351/6280/1433}{
+                \includegraphics[height=\paperheight]{../Images/Camerer.PNG}}
+            };
+        \end{tikzpicture}
+     \end{frame}
+
+\begin{frame}[plain, label=AEAreg]
+         \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+            	\href{http://www.sciencemag.org/news/2016/03/about-40-economics-experiments-fail-replication-survey}{
+                \includegraphics[height=\paperheight]{../Images/Bohannon.PNG}}
+            };
+        \end{tikzpicture}
+     \end{frame}
+
 }
+
+
 
 { % all template changes are local to this group.
     \setbeamertemplate{navigation symbols}{}
@@ -645,12 +669,25 @@ New tools exist to make workflow more easily reproducible
     \begin{frame}[plain, label=AEAreg]
          \begin{tikzpicture}[remember picture,overlay]
             \node[at=(current page.center)] {
-                \includegraphics[height=\paperheight]{../Images/github-logo-transparent.JPG}
+                \includegraphics[height=1.5in]{../Images/github-logo-transparent.JPG}
+                 \includegraphics[width=2in]{../Images/RStudio-Logo-Blue-Gradient.png}			     			 \includegraphics[height=1.5in]{../Images/jupyter.png}   
             };
         \end{tikzpicture}
      \end{frame}
 }
 
+%{ % all template changes are local to this group.
+%   \setbeamertemplate{navigation symbols}{}
+%    \begin{frame}[plain, label=AEAreg]
+%         \begin{tikzpicture}[remember picture,overlay]
+%            \node at (0,2) \includegraphics[height=1.5in]{../Images/github-logo-transparent.JPG};
+                
+%              \node[above] at (3,2) \includegraphics[width=2in]{../Images/RStudio-Logo-Blue-Gradient.png};
+              
+%              \node[above] at (1,1) \includegraphics[height=1.5in]{../Images/jupyter.png};   
+%           \end{tikzpicture}
+%     \end{frame}
+%}
 
 %\begin{frame}{Dynamic Documents}
 %Write your code and your paper in the same file so you won't lose information or make copy and paste mistakes.
